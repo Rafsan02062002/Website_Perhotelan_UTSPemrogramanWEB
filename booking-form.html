@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bahagia - Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Bahagia - Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="landingpage.html">Home</a></li>
+				<li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="booking-form.html">Booking Form</a></li>
+                <li><a href="room-table.html">Room Rates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Book Your Stay</h2>
+        <form action="confirmation.html" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="checkin">Check-in Date:</label><br>
+            <input type="date" id="checkin" name="checkin" required><br><br>
+
+            <label for="checkout">Check-out Date:</label><br>
+            <input type="date" id="checkout" name="checkout" required><br><br>
+
+            <label for="room">Room Type:</label><br>
+            <select id="room" name="room">
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select><br><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Bahagia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
